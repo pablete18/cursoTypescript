@@ -1,4 +1,5 @@
-function sumaArreglo(arregloNumeros: number[]): number{
+function sumaArreglo(arregloNumeros: number[]): number{ /* entre parentesis recibe la variable con su tipo de dato y 
+    despues de parentesis el tipo de dato q espera de la funcion  */
 
     let suma = 0
 
@@ -11,7 +12,7 @@ function sumaArreglo(arregloNumeros: number[]): number{
 }
 
 
-function main () : void{
+function main () : void{// void quiere decir q no espera algun tipo de dato
     
 const arregloNumeros = [1,54,5,32,34]
 console.log( sumaArreglo(arregloNumeros))
@@ -19,6 +20,9 @@ console.log( sumaArreglo(arregloNumeros))
 }
 
 main()
+
+
+
 
 // LOS ENUM: son una forma de modelar diferentes tipos de estado de una entidad.
 //para ello, se utiliazan estructuras dew datos que contienen distintas contantes con nombre, 
@@ -44,6 +48,8 @@ enum Color {
 }
 
 console.log(Color.Azul);
+
+//UNION DE TIPOS 
 
 type Estados = "PRENDIDO" | "APAGADO"
 

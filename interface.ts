@@ -1,5 +1,5 @@
 /* las interfaces son estriucturas que definen el "contrato" de la aplicacion.
- son para modelar los JSON, array, funciones o clases. Se le agrega I para diferneciarlo de un type */
+ son para modelar los JSON, array, funciones o clases.  */ // (arma la estructura de clase)
 interface Ivacunas {
     rabia: boolean,
     moquillo: boolean,
@@ -14,16 +14,18 @@ interface IPerro {
     color : string;
     comidasFavoritas : string[];// esto quiere decir array de string
     gustaJugar : boolean;
-    vacunas? : Ivacunas;
+    vacunas? : Ivacunas; // el signo de interrogacion quiere decir q es un valor opcional
     madre? : IPerro;
     padre? : IPerro;
 
-    crecer : () => void;
+    /* crecer : () => void;
         sumarInformacionPadre : (padre: IPerro) => void;
         sumarInformacionMadre : (madre : IPerro) => void;
-        sumarVacunas: (vacunas: Ivacunas) => void;
+        sumarVacunas: (vacunas: Ivacunas) => void; */
 
 }
+
+
 
 console.log();
 
