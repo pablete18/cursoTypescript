@@ -66,3 +66,12 @@ const suma : Operacion = (a,b) => a + b
 console.log(suma(1,6));
 
 
+function miFuncion(n: number): number {
+    if (n === 0) {
+        return 1;
+    } 
+    return n *  miFuncion(n - 1);
+}
+
+const result = miFuncion(5);
+console.log(`hola este es mi ${result}`);
