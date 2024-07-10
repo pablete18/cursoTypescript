@@ -125,7 +125,7 @@ function promedio(usuarios : IUsuario[]) : number {
 
     return resultado / usuarios.length
 
-    return resultado 
+    
 }
 
 
